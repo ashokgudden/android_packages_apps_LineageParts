@@ -80,7 +80,6 @@ public class NotificationBrightnessDialog extends CustomDialogPreference<AlertDi
                 (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
         Bundle bundle = new Bundle();
-        bundle.putBoolean(Notification.EXTRA_FORCE_SHOW_LIGHTS, true);
 
         mNotificationBuilder = new Notification.Builder(mContext);
         mNotificationBuilder.setExtras(bundle)

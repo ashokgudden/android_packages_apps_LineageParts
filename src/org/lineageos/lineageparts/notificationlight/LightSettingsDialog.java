@@ -314,7 +314,6 @@ public class LightSettingsDialog extends AlertDialog implements
         mLedLastSpeedOff = speedOff;
 
         final Bundle b = new Bundle();
-        b.putBoolean(Notification.EXTRA_FORCE_SHOW_LIGHTS, true);
 
         final Notification.Builder builder = new Notification.Builder(mContext);
         builder.setLights(color, speedOn, speedOff);
